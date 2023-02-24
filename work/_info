@@ -1,0 +1,236 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA/17.0
+Ealu
+Z0 w1677165900
+Z1 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z4 dD:/OneDrive - Murex/Desktop/Project/CPU
+Z5 8D:/OneDrive - Murex/Desktop/Project/CPU/entities/ALU.vhd
+Z6 FD:/OneDrive - Murex/Desktop/Project/CPU/entities/ALU.vhd
+l0
+L5
+V6kLj^Ec=zi`C^mFKczPz13
+!s100 8?ll:D20ie7CJ<3lF7^_n1
+Z7 OV;C;10.5b;63
+32
+Z8 !s110 1677166598
+!i10b 1
+Z9 !s108 1677166598.000000
+Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/OneDrive - Murex/Desktop/Project/CPU/entities/ALU.vhd|
+Z11 !s107 D:/OneDrive - Murex/Desktop/Project/CPU/entities/ALU.vhd|
+!i113 1
+Z12 o-work work -2002 -explicit
+Z13 tExplicit 1 CvgOpt 0
+Abehavioral
+R1
+R2
+R3
+DEx4 work 3 alu 0 22 6kLj^Ec=zi`C^mFKczPz13
+l16
+L14
+V7L;3?X3L0A@UmJ[_XhXT23
+!s100 VQ8[93UlfQ6RIe>5[Z1E>0
+R7
+32
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Eextnt32
+Z14 w1677156945
+R1
+R2
+R3
+R4
+Z15 8D:/OneDrive - Murex/Desktop/Project/CPU/entities/EXTNT32.vhd
+Z16 FD:/OneDrive - Murex/Desktop/Project/CPU/entities/EXTNT32.vhd
+l0
+L5
+Vai5WPJ=aSDS<A;4VP[kCg3
+!s100 E]H6?ZEBGXcI:VZB1aLYi0
+R7
+32
+R8
+!i10b 1
+R9
+Z17 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/OneDrive - Murex/Desktop/Project/CPU/entities/EXTNT32.vhd|
+Z18 !s107 D:/OneDrive - Murex/Desktop/Project/CPU/entities/EXTNT32.vhd|
+!i113 1
+R12
+R13
+Abehavioral
+R1
+R2
+R3
+DEx4 work 7 extnt32 0 22 ai5WPJ=aSDS<A;4VP[kCg3
+l16
+L15
+Vk80GG]zjJjJmKMl<kz4HP3
+!s100 j@KYZ7oCeBdSjcN5eR3`c3
+R7
+32
+R8
+!i10b 1
+R9
+R17
+R18
+!i113 1
+R12
+R13
+Emem64b32
+Z19 w1677165910
+R1
+R2
+R3
+R4
+Z20 8D:/OneDrive - Murex/Desktop/Project/CPU/entities/MEM64B32.vhd
+Z21 FD:/OneDrive - Murex/Desktop/Project/CPU/entities/MEM64B32.vhd
+l0
+L5
+V@eH7=5ZNE0BoL5C[?5ZAL0
+!s100 9z@><W?LdR]J?98=EF4892
+R7
+32
+Z22 !s110 1677166599
+!i10b 1
+R9
+Z23 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/OneDrive - Murex/Desktop/Project/CPU/entities/MEM64B32.vhd|
+Z24 !s107 D:/OneDrive - Murex/Desktop/Project/CPU/entities/MEM64B32.vhd|
+!i113 1
+R12
+R13
+Abehavorial
+R1
+R2
+R3
+DEx4 work 8 mem64b32 0 22 @eH7=5ZNE0BoL5C[?5ZAL0
+l18
+L15
+VQeW<hGYL;KniheH1EWCVn0
+!s100 JSm[;z=_oZRGgSB:D8T>>1
+R7
+32
+R22
+!i10b 1
+R9
+R23
+R24
+!i113 1
+R12
+R13
+Emux2tn
+Z25 w1677156936
+R1
+R2
+R3
+R4
+Z26 8D:/OneDrive - Murex/Desktop/Project/CPU/entities/MUX2TN.vhd
+Z27 FD:/OneDrive - Murex/Desktop/Project/CPU/entities/MUX2TN.vhd
+l0
+L5
+VZ<aOzHBG<R2KWaiPFU>G:0
+!s100 iJf^G9_ga6IEH4M6NAK`k0
+R7
+32
+R22
+!i10b 1
+Z28 !s108 1677166599.000000
+Z29 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/OneDrive - Murex/Desktop/Project/CPU/entities/MUX2TN.vhd|
+Z30 !s107 D:/OneDrive - Murex/Desktop/Project/CPU/entities/MUX2TN.vhd|
+!i113 1
+R12
+R13
+Abehavioral
+R1
+R2
+R3
+DEx4 work 6 mux2tn 0 22 Z<aOzHBG<R2KWaiPFU>G:0
+l17
+L16
+V>@fE2>gXz?R4gn8M83AM82
+!s100 NOQ;VZU3X7^iH:QSX1Ua`1
+R7
+32
+R22
+!i10b 1
+R28
+R29
+R30
+!i113 1
+R12
+R13
+Ereg16b32
+Z31 w1677165601
+R1
+R2
+R3
+R4
+Z32 8D:/OneDrive - Murex/Desktop/Project/CPU/entities/REG16B32.vhd
+Z33 FD:/OneDrive - Murex/Desktop/Project/CPU/entities/REG16B32.vhd
+l0
+L5
+VRb39GIadG6ScOFVUh8JI`1
+!s100 f=OBkX7ShBj57f2?l8hl41
+R7
+32
+R22
+!i10b 1
+R28
+Z34 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/OneDrive - Murex/Desktop/Project/CPU/entities/REG16B32.vhd|
+Z35 !s107 D:/OneDrive - Murex/Desktop/Project/CPU/entities/REG16B32.vhd|
+!i113 1
+R12
+R13
+Abehavioral
+R1
+R2
+R3
+DEx4 work 8 reg16b32 0 22 Rb39GIadG6ScOFVUh8JI`1
+l33
+L19
+Vl9S2WiNRSC_zBWMNWcYdJ1
+Z36 !s100 nCaLIa7S<;SH4<MlMocV82
+R7
+32
+R22
+!i10b 1
+R28
+R34
+R35
+!i113 1
+R12
+R13
+Acomportement
+R2
+R3
+DEx4 work 8 reg16b32 0 22 MOm612zRBCkVTHgJQUzoM0
+l32
+L29
+VBUO2aCO>7Z2Wc5gRP6B_@1
+!s100 [iYNiRmXZeQbE6^HjJmW21
+R7
+32
+!s110 1677144252
+!i10b 1
+!s108 1677144252.000000
+!s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/OneDrive - Murex/Desktop/Project/CPU/REG16B32.vhd|
+!s107 D:/OneDrive - Murex/Desktop/Project/CPU/REG16B32.vhd|
+!i113 1
+R12
+R13
+w1677144214
+FD:/OneDrive - Murex/Desktop/Project/CPU/REG16B32.vhd
+8D:/OneDrive - Murex/Desktop/Project/CPU/REG16B32.vhd
