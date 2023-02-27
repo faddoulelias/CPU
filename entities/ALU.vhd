@@ -19,7 +19,7 @@ begin
         case OP is
             when "00" => Y <= std_logic_vector(signed(BUS_A) + signed(BUS_B));
             when "01" => Y <= BUS_B;
-            when "10" => Y <=  std_logic_vector(signed(BUS_A) - signed(BUS_B));
+            when "10" => Y <= std_logic_vector(signed(BUS_A) - signed(BUS_B));
             when "11" => Y <= BUS_A;
             when others => Y <= (others => '0');
         end case;

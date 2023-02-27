@@ -4,6 +4,7 @@ vcom -93 ./entities/REG16B32.vhd
 vsim -gui work.reg16b32 -default_radix decimal
 
 add wave -radix binary -position end sim:/reg16b32/clk
+add wave -radix decimal -position end sim:/reg16b32/reset
 add wave -radix decimal -position end sim:/reg16b32/w
 add wave -radix binary -position end sim:/reg16b32/we
 add wave -radix unsigned -position end sim:/reg16b32/Rw
@@ -14,6 +15,7 @@ add wave -radix decimal -position end sim:/reg16b32/B
 add wave -radix decimal -position end sim:/reg16b32/Bench
 
 force -freeze sim:/reg16b32/clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/reg16b32/reset 0 0
 
 force sim:/reg16b32/w {0} 0
 force sim:/reg16b32/we 0 0
