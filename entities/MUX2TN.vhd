@@ -15,5 +15,5 @@ end entity MUX2TN;
 
 architecture Behavioral of MUX2TN is
 begin
-    S <= A when COM = '1' else B;
+    S <= A when COM = '0' else B;
 end Behavioral;
