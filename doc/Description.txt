@@ -1,0 +1,58 @@
+-- CPU
+
+ALU : Arithmetic Logic Unit
+    Y : output on 32 bits
+    A : input on 32 bits
+    B : input on 32 bits
+    OP : operation code on 2 bits
+        -- 00 : Y = A + B
+        -- 01 : Y = B
+        -- 10 : Y = A - B
+        -- 11 : Y = A
+
+EXTNT32 : Extends a N bit number to 32 bits
+    N : input size (generics)
+    E : input on N bits
+    S : output on 32 bits
+
+MEM64B32 : Memory 64 words of 32 bits
+    CLK : clock input;
+    RST : reset on high;
+    DATA_IN : input on 32 bits;
+    DATA_OUT : output on 32 bits;
+    ADDR : input on 6 bits;
+    WE : write enable on 1 bit
+
+MUX2TN : Multiplexer 2 to N
+    N : input size (generics)
+    A : input on N bits
+    B : input on N bits
+    COM : input on 1 bit
+
+REG16B32 : Register 16 words of 32 bits
+    CLK : clock input;
+    RST : reset on high;
+    W : input on 32 bits;
+    WE : write enable on 1 bit;
+    RW : Register write;
+    RA : Register A address;
+    RB : Register B address;
+    A : output on 32 bits;
+    B : output on 32 bits
+
+PROCESSOR : Processor
+    CLK : clock input;
+    RST : reset on high;
+    REG_WRITE : Enable write on register;
+    RW : Register write;
+    RA : Register A address;
+    RB : Register B address;
+    IMM : Immediate value;
+    ALU_SRC : ALU source selector;
+    ALU_CTR : ALU control;
+    MEM_WR : Memory write enable;
+    WR_SRC : Write source selector;
+    FLAG : ALU flag output
+
+    Instruction board :
+        
