@@ -54,5 +54,4 @@ PROCESSOR : Processor
     WR_SRC : Write source selector;
     FLAG : ALU flag output
 
-    Instruction board :
         
