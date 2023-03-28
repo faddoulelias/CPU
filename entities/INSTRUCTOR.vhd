@@ -10,13 +10,13 @@ entity INSTRUCTOR is
         CLK : in std_logic;
         RST : in std_logic;
         nPCsel : in std_logic;
-        OFFSET : in std_logic_vector(31 downto 0);
-        INSTRUCTION : in std_logic_vector(31 downto 0);
+        OFFSET : in std_logic_vector(23 downto 0);
+        INSTRUCTION : out std_logic_vector(31 downto 0)
     );
 end INSTRUCTOR;
 
 architecture Behavioral of INSTRUCTOR is
-    addr : std_logic_vector(31 downto 0);
+    signal addr : std_logic_vector(31 downto 0);
 begin
     PCT24B32 : entity work.PCT24B32
     port map(

@@ -22,9 +22,9 @@ V6kLj^Ec=zi`C^mFKczPz13
 !s100 8?ll:D20ie7CJ<3lF7^_n1
 Z7 OV;C;10.5b;63
 32
-Z8 !s110 1678907512
+Z8 !s110 1679999531
 !i10b 1
-Z9 !s108 1678907512.000000
+Z9 !s108 1679999531.000000
 Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/OneDrive - Murex/Desktop/Project/CPU/entities/ALU.vhd|
 Z11 !s107 D:/OneDrive - Murex/Desktop/Project/CPU/entities/ALU.vhd|
 !i113 1
@@ -49,25 +49,25 @@ R11
 !i113 1
 R12
 R13
-Eextnt32
-Z15 w1678892714
+Econtroller
+Z15 w1679989443
 R1
 R2
 R3
 R4
-Z16 8D:/OneDrive - Murex/Desktop/Project/CPU/entities/EXTNT32.vhd
-Z17 FD:/OneDrive - Murex/Desktop/Project/CPU/entities/EXTNT32.vhd
+Z16 8D:/OneDrive - Murex/Desktop/Project/CPU/entities/CONTROLLER.vhd
+Z17 FD:/OneDrive - Murex/Desktop/Project/CPU/entities/CONTROLLER.vhd
 l0
 L5
-Vai5WPJ=aSDS<A;4VP[kCg3
-!s100 E]H6?ZEBGXcI:VZB1aLYi0
+V8G=[Am?A8:4:l1;dHUdV;1
+!s100 STez[:Ybmi;`[4]ZU>P?G0
 R7
 32
 R8
 !i10b 1
 R9
-Z18 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/OneDrive - Murex/Desktop/Project/CPU/entities/EXTNT32.vhd|
-Z19 !s107 D:/OneDrive - Murex/Desktop/Project/CPU/entities/EXTNT32.vhd|
+Z18 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/OneDrive - Murex/Desktop/Project/CPU/entities/CONTROLLER.vhd|
+Z19 !s107 D:/OneDrive - Murex/Desktop/Project/CPU/entities/CONTROLLER.vhd|
 !i113 1
 R12
 R13
@@ -75,11 +75,11 @@ Abehavioral
 R1
 R2
 R3
-Z20 DEx4 work 7 extnt32 0 22 ai5WPJ=aSDS<A;4VP[kCg3
-l16
+DEx4 work 10 controller 0 22 8G=[Am?A8:4:l1;dHUdV;1
+l17
 L15
-Vk80GG]zjJjJmKMl<kz4HP3
-!s100 j@KYZ7oCeBdSjcN5eR3`c3
+VBdMJj?gHRU;TmW=aV7kUS1
+!s100 Y[Rim5nLagQOTf@kBaT^W2
 R7
 32
 R8
@@ -90,25 +90,150 @@ R19
 !i113 1
 R12
 R13
-Einm64b32
-Z21 w1678897965
+Ecpu
+Z20 w1679991190
 R1
 R2
 R3
 R4
-Z22 8D:/OneDrive - Murex/Desktop/Project/CPU/entities/INM64B32.vhd
-Z23 FD:/OneDrive - Murex/Desktop/Project/CPU/entities/INM64B32.vhd
+Z21 8./entities/CPU.vhd
+Z22 F./entities/CPU.vhd
 l0
 L5
-VYFVKAi>c_YBiVhV<AoJ973
-!s100 jRz8k0PfmRcPcle]aMWPM1
+VG`O[NlgEoDHJCER=mmQil2
+!s100 a;?RfgSYiZYYHM=DBBma02
+R7
+31
+Z23 !s110 1679999733
+!i10b 1
+Z24 !s108 1679999733.000000
+Z25 !s90 -reportprogress|300|-93|./entities/CPU.vhd|
+Z26 !s107 ./entities/CPU.vhd|
+!i113 1
+o-93
+R13
+Abehavioral
+Z27 DEx4 work 9 processor 0 22 0@^CJBDdEWhX1JA`U?U<=2
+Z28 DEx4 work 7 decoder 0 22 ^NiSMj8iCjGSA0L`U=77[2
+R1
+R2
+R3
+Z29 DEx4 work 3 cpu 0 22 G`O[NlgEoDHJCER=mmQil2
+l36
+L20
+Z30 VPQkFjN<meVZ=FHDhBAFh^2
+Z31 !s100 6YM=`JTaJ;Dkb?^ZVK<CT2
+R7
+31
+R23
+!i10b 1
+R24
+R25
+R26
+!i113 1
+o-93
+R13
+Edecoder
+Z32 w1679993154
+R1
+R2
+R3
+R4
+Z33 8D:/OneDrive - Murex/Desktop/Project/CPU/entities/DECODER.vhd
+Z34 FD:/OneDrive - Murex/Desktop/Project/CPU/entities/DECODER.vhd
+l0
+L5
+V^NiSMj8iCjGSA0L`U=77[2
+!s100 @ciRj4f8oAImgRG@DWgHk1
 R7
 32
-Z24 !s110 1678907513
+R8
 !i10b 1
-Z25 !s108 1678907513.000000
-Z26 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/OneDrive - Murex/Desktop/Project/CPU/entities/INM64B32.vhd|
-Z27 !s107 D:/OneDrive - Murex/Desktop/Project/CPU/entities/INM64B32.vhd|
+R9
+Z35 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/OneDrive - Murex/Desktop/Project/CPU/entities/DECODER.vhd|
+Z36 !s107 D:/OneDrive - Murex/Desktop/Project/CPU/entities/DECODER.vhd|
+!i113 1
+R12
+R13
+Abehavioral
+R1
+R2
+R3
+R28
+l27
+L26
+V:jkBX^3bHTON7kfH0[H7^3
+!s100 [2JJ^M[iINmQk50>42AX10
+R7
+32
+R8
+!i10b 1
+R9
+R35
+R36
+!i113 1
+R12
+R13
+Eextnt32
+Z37 w1678892714
+R1
+R2
+R3
+R4
+Z38 8D:/OneDrive - Murex/Desktop/Project/CPU/entities/EXTNT32.vhd
+Z39 FD:/OneDrive - Murex/Desktop/Project/CPU/entities/EXTNT32.vhd
+l0
+L5
+Vai5WPJ=aSDS<A;4VP[kCg3
+!s100 E]H6?ZEBGXcI:VZB1aLYi0
+R7
+32
+R8
+!i10b 1
+R9
+Z40 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/OneDrive - Murex/Desktop/Project/CPU/entities/EXTNT32.vhd|
+Z41 !s107 D:/OneDrive - Murex/Desktop/Project/CPU/entities/EXTNT32.vhd|
+!i113 1
+R12
+R13
+Abehavioral
+R1
+R2
+R3
+Z42 DEx4 work 7 extnt32 0 22 ai5WPJ=aSDS<A;4VP[kCg3
+l16
+L15
+Vk80GG]zjJjJmKMl<kz4HP3
+!s100 j@KYZ7oCeBdSjcN5eR3`c3
+R7
+32
+R8
+!i10b 1
+R9
+R40
+R41
+!i113 1
+R12
+R13
+Einm64b32
+Z43 w1679990666
+R1
+R2
+R3
+R4
+Z44 8D:/OneDrive - Murex/Desktop/Project/CPU/entities/INM64B32.vhd
+Z45 FD:/OneDrive - Murex/Desktop/Project/CPU/entities/INM64B32.vhd
+l0
+L5
+VnNdO9;J@Ff?[HOdAo91IM0
+!s100 WigB5^_PdN6Q]DRj3WQl;2
+R7
+32
+R8
+!i10b 1
+R9
+Z46 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/OneDrive - Murex/Desktop/Project/CPU/entities/INM64B32.vhd|
+Z47 !s107 D:/OneDrive - Murex/Desktop/Project/CPU/entities/INM64B32.vhd|
 !i113 1
 R12
 R13
@@ -116,40 +241,83 @@ Abehavorial
 R1
 R2
 R3
-DEx4 work 8 inm64b32 0 22 YFVKAi>c_YBiVhV<AoJ973
+Z48 DEx4 work 8 inm64b32 0 22 nNdO9;J@Ff?[HOdAo91IM0
 l17
 L14
 VDlY5`eTnV>zKTdE=5APcU3
 !s100 JhFX[;_M@6OBz@`a3UN?H1
 R7
 32
-R24
+R8
 !i10b 1
-R25
-R26
-R27
+R9
+R46
+R47
 !i113 1
 R12
 R13
-Emem64b32
-Z28 w1677752454
+Einstructor
+Z49 w1679990895
 R1
 R2
 R3
 R4
-Z29 8D:/OneDrive - Murex/Desktop/Project/CPU/entities/MEM64B32.vhd
-Z30 FD:/OneDrive - Murex/Desktop/Project/CPU/entities/MEM64B32.vhd
+Z50 8D:/OneDrive - Murex/Desktop/Project/CPU/entities/INSTRUCTOR.vhd
+Z51 FD:/OneDrive - Murex/Desktop/Project/CPU/entities/INSTRUCTOR.vhd
 l0
-L5
-VCkFEW6^8n5_T4WYf_NQLD1
-!s100 PdC=GNX>bgoFQ3nkzU5942
+L8
+VS^9RZcK>diJHAYAk7RUA91
+!s100 2X=FbdjfIIdnG3chgN4d]1
 R7
 32
 R8
 !i10b 1
 R9
-Z31 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/OneDrive - Murex/Desktop/Project/CPU/entities/MEM64B32.vhd|
-Z32 !s107 D:/OneDrive - Murex/Desktop/Project/CPU/entities/MEM64B32.vhd|
+Z52 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/OneDrive - Murex/Desktop/Project/CPU/entities/INSTRUCTOR.vhd|
+Z53 !s107 D:/OneDrive - Murex/Desktop/Project/CPU/entities/INSTRUCTOR.vhd|
+!i113 1
+R12
+R13
+Abehavioral
+R48
+Z54 DEx4 work 8 pct24b32 0 22 aUD:W48Mm9?XJWHU5c[=a2
+R1
+R2
+R3
+DEx4 work 10 instructor 0 22 S^9RZcK>diJHAYAk7RUA91
+l20
+L18
+VLXSnc`zTL7hKN;2h8B^e83
+!s100 =N0R<o^T0AgSdU6:JN8zi1
+R7
+32
+R8
+!i10b 1
+R9
+R52
+R53
+!i113 1
+R12
+R13
+Emem64b32
+Z55 w1679999474
+R1
+R2
+R3
+R4
+Z56 8D:/OneDrive - Murex/Desktop/Project/CPU/entities/MEM64B32.vhd
+Z57 FD:/OneDrive - Murex/Desktop/Project/CPU/entities/MEM64B32.vhd
+l0
+L5
+V[Jlh_9gL==B85YbknlOgU1
+!s100 CoZX`ShLbhiig;hD7z2a`3
+R7
+32
+R8
+!i10b 1
+R9
+Z58 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/OneDrive - Murex/Desktop/Project/CPU/entities/MEM64B32.vhd|
+Z59 !s107 D:/OneDrive - Murex/Desktop/Project/CPU/entities/MEM64B32.vhd|
 !i113 1
 R12
 R13
@@ -157,40 +325,40 @@ Abehavorial
 R1
 R2
 R3
-Z33 DEx4 work 8 mem64b32 0 22 CkFEW6^8n5_T4WYf_NQLD1
+Z60 DEx4 work 8 mem64b32 0 22 [Jlh_9gL==B85YbknlOgU1
 l19
 L16
-VM0i@R?i7zTi0b?@kcXYL>2
-!s100 FQUVZaA0dzK9<mN9@DThH2
+Vl5DH`6glfkSC3Z1B:C]4=1
+!s100 >l4Yle7e4ETQd<CGVOanJ3
 R7
 32
 R8
 !i10b 1
 R9
-R31
-R32
+R58
+R59
 !i113 1
 R12
 R13
 Emux2tn
-Z34 w1677592352
+Z61 w1677592352
 R1
 R2
 R3
 R4
-Z35 8D:/OneDrive - Murex/Desktop/Project/CPU/entities/MUX2TN.vhd
-Z36 FD:/OneDrive - Murex/Desktop/Project/CPU/entities/MUX2TN.vhd
+Z62 8D:/OneDrive - Murex/Desktop/Project/CPU/entities/MUX2TN.vhd
+Z63 FD:/OneDrive - Murex/Desktop/Project/CPU/entities/MUX2TN.vhd
 l0
 L5
 VZ<aOzHBG<R2KWaiPFU>G:0
 !s100 iJf^G9_ga6IEH4M6NAK`k0
 R7
 32
-R24
+R8
 !i10b 1
-R25
-Z37 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/OneDrive - Murex/Desktop/Project/CPU/entities/MUX2TN.vhd|
-Z38 !s107 D:/OneDrive - Murex/Desktop/Project/CPU/entities/MUX2TN.vhd|
+R9
+Z64 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/OneDrive - Murex/Desktop/Project/CPU/entities/MUX2TN.vhd|
+Z65 !s107 D:/OneDrive - Murex/Desktop/Project/CPU/entities/MUX2TN.vhd|
 !i113 1
 R12
 R13
@@ -198,40 +366,40 @@ Abehavioral
 R1
 R2
 R3
-Z39 DEx4 work 6 mux2tn 0 22 Z<aOzHBG<R2KWaiPFU>G:0
+Z66 DEx4 work 6 mux2tn 0 22 Z<aOzHBG<R2KWaiPFU>G:0
 l17
 L16
 VjnYYlW^RPzYI5mD09W_7?0
 !s100 =<hR9e2j61?]UhSOTa?F11
 R7
 32
-R24
+R8
 !i10b 1
-R25
-R37
-R38
+R9
+R64
+R65
 !i113 1
 R12
 R13
 Epct24b32
-Z40 w1678896901
+Z67 w1679990899
 R1
 R2
 R3
 R4
-Z41 8D:/OneDrive - Murex/Desktop/Project/CPU/entities/PCT24B32.vhd
-Z42 FD:/OneDrive - Murex/Desktop/Project/CPU/entities/PCT24B32.vhd
+Z68 8D:/OneDrive - Murex/Desktop/Project/CPU/entities/PCT24B32.vhd
+Z69 FD:/OneDrive - Murex/Desktop/Project/CPU/entities/PCT24B32.vhd
 l0
 L5
-VR^JI_Vbf@aOZBgoQO]<Si3
-!s100 SPPbddac>382g@F25ZND32
+VaUD:W48Mm9?XJWHU5c[=a2
+!s100 Y6DngNRYf2h3@R??acJ0`3
 R7
 32
-R24
+R8
 !i10b 1
-R25
-Z43 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/OneDrive - Murex/Desktop/Project/CPU/entities/PCT24B32.vhd|
-Z44 !s107 D:/OneDrive - Murex/Desktop/Project/CPU/entities/PCT24B32.vhd|
+R9
+Z70 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/OneDrive - Murex/Desktop/Project/CPU/entities/PCT24B32.vhd|
+Z71 !s107 D:/OneDrive - Murex/Desktop/Project/CPU/entities/PCT24B32.vhd|
 !i113 1
 R12
 R13
@@ -239,86 +407,86 @@ Abehavioral
 R1
 R2
 R3
-DEx4 work 8 pct24b32 0 22 R^JI_Vbf@aOZBgoQO]<Si3
+R54
 l17
 L15
-VkF[jj9_63GIKG9_4zJDJ62
-!s100 2KbGA?@P`0<Nm1QR?zn:33
+VEMe7jUK]<ki8SgWVUOFbh3
+!s100 D8o^oW4aOMY9Vl24k[?YT1
 R7
 32
-R24
+R8
 !i10b 1
-R25
-R43
-R44
+R9
+R70
+R71
 !i113 1
 R12
 R13
 Eprocessor
-Z45 w1678887580
+Z72 w1679990812
 R1
 R2
 R3
 R4
-Z46 8./entities/PROCESSOR.vhd
-Z47 F./entities/PROCESSOR.vhd
+Z73 8D:/OneDrive - Murex/Desktop/Project/CPU/entities/PROCESSOR.vhd
+Z74 FD:/OneDrive - Murex/Desktop/Project/CPU/entities/PROCESSOR.vhd
 l0
 L5
-V9AXl`Ce3NoJMiN14TG2n41
+V0@^CJBDdEWhX1JA`U?U<=2
 !s100 T3:2=TgRhTJ8lS_R7IcPL1
 R7
-31
-Z48 !s110 1678907521
+32
+R8
 !i10b 1
-Z49 !s108 1678907521.000000
-Z50 !s90 -reportprogress|300|-93|./entities/PROCESSOR.vhd|
-Z51 !s107 ./entities/PROCESSOR.vhd|
+R9
+Z75 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/OneDrive - Murex/Desktop/Project/CPU/entities/PROCESSOR.vhd|
+Z76 !s107 D:/OneDrive - Murex/Desktop/Project/CPU/entities/PROCESSOR.vhd|
 !i113 1
-o-93
+R12
 R13
 Abehavioral
-R33
+R60
 R14
-R39
-R20
-Z52 DEx4 work 8 reg16b32 0 22 Rb39GIadG6ScOFVUh8JI`1
+R66
+R42
+Z77 DEx4 work 8 reg16b32 0 22 Rb39GIadG6ScOFVUh8JI`1
 R1
 R2
 R3
-DEx4 work 9 processor 0 22 9AXl`Ce3NoJMiN14TG2n41
+R27
 l30
 L22
-V1A;DP?@aMGSYS=S054e^O2
-Z53 !s100 Y4fjJ8cgl]7kMcWjD`b3h1
+VIhJ=>`BAMEz=L<><N3QhM3
+!s100 @MkCEo;1LI0S;N>I]06b02
 R7
-31
-R48
+32
+R8
 !i10b 1
-R49
-R50
-R51
+R9
+R75
+R76
 !i113 1
-o-93
+R12
 R13
 Eprocessor_test
-Z54 w1677596030
+Z78 w1677596030
 R1
 R2
 R3
 R4
-Z55 8D:/OneDrive - Murex/Desktop/Project/CPU/test-benches/PROCESSOR_TEST.vhd
-Z56 FD:/OneDrive - Murex/Desktop/Project/CPU/test-benches/PROCESSOR_TEST.vhd
+Z79 8D:/OneDrive - Murex/Desktop/Project/CPU/test-benches/PROCESSOR_TEST.vhd
+Z80 FD:/OneDrive - Murex/Desktop/Project/CPU/test-benches/PROCESSOR_TEST.vhd
 l0
 L5
 VP0Y[[Hag5U:WKbKPBE=Ma0
 !s100 D[@VCioYe1BZZ87g8ZlTS1
 R7
 32
-Z57 !s110 1677599593
+Z81 !s110 1677599593
 !i10b 1
-Z58 !s108 1677599593.000000
-Z59 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/OneDrive - Murex/Desktop/Project/CPU/test-benches/PROCESSOR_TEST.vhd|
-Z60 !s107 D:/OneDrive - Murex/Desktop/Project/CPU/test-benches/PROCESSOR_TEST.vhd|
+Z82 !s108 1677599593.000000
+Z83 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/OneDrive - Murex/Desktop/Project/CPU/test-benches/PROCESSOR_TEST.vhd|
+Z84 !s107 D:/OneDrive - Murex/Desktop/Project/CPU/test-benches/PROCESSOR_TEST.vhd|
 !i113 1
 R12
 R13
@@ -333,33 +501,33 @@ Vf:0I9Z7^:3;8Kcg1kIi?a2
 !s100 ET@0jg64;OKce8G8Q61AK0
 R7
 32
-R57
+R81
 !i10b 1
-R58
-R59
-R60
+R82
+R83
+R84
 !i113 1
 R12
 R13
 Ereg16b32
-Z61 w1678887571
+Z85 w1678887571
 R1
 R2
 R3
 R4
-Z62 8D:/OneDrive - Murex/Desktop/Project/CPU/entities/REG16B32.vhd
-Z63 FD:/OneDrive - Murex/Desktop/Project/CPU/entities/REG16B32.vhd
+Z86 8D:/OneDrive - Murex/Desktop/Project/CPU/entities/REG16B32.vhd
+Z87 FD:/OneDrive - Murex/Desktop/Project/CPU/entities/REG16B32.vhd
 l0
 L5
 VRb39GIadG6ScOFVUh8JI`1
 !s100 f=OBkX7ShBj57f2?l8hl41
 R7
 32
-R24
+R8
 !i10b 1
-R25
-Z64 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/OneDrive - Murex/Desktop/Project/CPU/entities/REG16B32.vhd|
-Z65 !s107 D:/OneDrive - Murex/Desktop/Project/CPU/entities/REG16B32.vhd|
+R9
+Z88 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/OneDrive - Murex/Desktop/Project/CPU/entities/REG16B32.vhd|
+Z89 !s107 D:/OneDrive - Murex/Desktop/Project/CPU/entities/REG16B32.vhd|
 !i113 1
 R12
 R13
@@ -367,18 +535,18 @@ Abehavioral
 R1
 R2
 R3
-R52
+R77
 l33
 L19
 Vl9S2WiNRSC_zBWMNWcYdJ1
 !s100 nCaLIa7S<;SH4<MlMocV82
 R7
 32
-R24
+R8
 !i10b 1
-R25
-R64
-R65
+R9
+R88
+R89
 !i113 1
 R12
 R13
@@ -404,24 +572,24 @@ w1677144214
 FD:/OneDrive - Murex/Desktop/Project/CPU/REG16B32.vhd
 8D:/OneDrive - Murex/Desktop/Project/CPU/REG16B32.vhd
 Ereg32pc
-Z66 w1678894714
+Z90 w1678894714
 R1
 R2
 R3
 R4
-Z67 8D:/OneDrive - Murex/Desktop/Project/CPU/entities/REG32PC.VHD
-Z68 FD:/OneDrive - Murex/Desktop/Project/CPU/entities/REG32PC.VHD
+Z91 8D:/OneDrive - Murex/Desktop/Project/CPU/entities/REG32PC.VHD
+Z92 FD:/OneDrive - Murex/Desktop/Project/CPU/entities/REG32PC.VHD
 l0
 L5
 VU0i>`D1i5T[_o8hVLF8YT1
 !s100 TY@XAeA95mTIBo[gONQg^0
 R7
 32
-Z69 !s110 1678894716
+Z93 !s110 1678894716
 !i10b 1
-Z70 !s108 1678894716.000000
-Z71 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/OneDrive - Murex/Desktop/Project/CPU/entities/REG32PC.VHD|
-Z72 !s107 D:/OneDrive - Murex/Desktop/Project/CPU/entities/REG32PC.VHD|
+Z94 !s108 1678894716.000000
+Z95 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/OneDrive - Murex/Desktop/Project/CPU/entities/REG32PC.VHD|
+Z96 !s107 D:/OneDrive - Murex/Desktop/Project/CPU/entities/REG32PC.VHD|
 !i113 1
 R12
 R13
@@ -436,11 +604,11 @@ VPonK:6_>ORQ=JnS[B;UEX0
 !s100 _ZkVXc>h^YdHPUGICWBUF0
 R7
 32
-R69
+R93
 !i10b 1
-R70
-R71
-R72
+R94
+R95
+R96
 !i113 1
 R12
 R13

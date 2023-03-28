@@ -8,7 +8,7 @@ entity MEM64B32 is
         RST : in std_logic;
         DATA_IN : in std_logic_vector(31 downto 0);
         DATA_OUT : out std_logic_vector(31 downto 0);
-        ADDR : in std_logic_vector(5 downto 0);
+        ADDR : in std_logic_vector(31 downto 0);
         WE : in std_logic
     );
 end MEM64B32;
@@ -30,5 +30,6 @@ begin
         end if;
     end process;
     
-    DATA_OUT <= Bench(to_integer(unsigned(ADDR)));
+    
+    DATA_OUT <= Bench(to_integer(unsigned(ADDR(5 downto 0))));
 end behavorial; 

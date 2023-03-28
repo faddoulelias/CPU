@@ -7,7 +7,7 @@ entity INM64B32 is
         CLK : in std_logic;
         RST : in std_logic;
         DATA_OUT : out std_logic_vector(31 downto 0);
-        ADDR : in std_logic_vector(5 downto 0)
+        ADDR : in std_logic_vector(31 downto 0)
     );
 end INM64B32;
 
