@@ -69,7 +69,7 @@ begin
         RST => RESET,
         DATA_IN => busB,
         DATA_OUT => DataOUT,
-        ADDR => aluOUT(5 downto 0),
+        ADDR => aluOUT,
         WE => MEM_WR
     );
 

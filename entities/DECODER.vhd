@@ -4,70 +4,147 @@ use ieee.numeric_std.all;
 
 entity DECODER is
     Port (
-        INSTRUCTION : in std_logic_vector(31 downto 0);
-        PSR : in std_logic_vector(31 downto 0);
+        INSTRUCTION : in std_logic_vector(31 downto 0) := (others => '0');
+        PSR : in std_logic_vector(31 downto 0) := (others => '0');
 
-        PC : out std_logic_vector(31 downto 0);
-        PSR_EN : out std_logic_vector(31 downto 0);
-        RN : out std_logic_vector(3 downto 0);
-        RD : out std_logic_vector(3 downto 0);
-        RM : out std_logic_vector(3 downto 0);
-        REG_WRITE : out std_logic;
-        REG_SEL : out std_logic;
-        ALU_CTR : out std_logic_vector(1 downto 0);
-        ALU_SRC : out std_logic;
-        WR_SRC : out std_logic;
-        MEM_WRITE : out std_logic;
-        PSR_WRITE : out std_logic;
-        OFFSET : out std_logic_vector(23 downto 0);
-        IMM : out std_logic_vector(31 downto 0);
+        N_PC_SEL : out std_logic := '0';
+        PSR_EN : out std_logic := '0';
+        RN : out std_logic_vector(3 downto 0) := (others => '0'); --Ra
+        RM : out std_logic_vector(3 downto 0) := (others => '0'); --Rb
+        RD : out std_logic_vector(3 downto 0) := (others => '0'); --Rw
+        REG_SEL : out std_logic := '0'; --if 1 Rw = Rb
+        REG_WRITE : out std_logic := '0';
+        ALU_CTR : out std_logic_vector(1 downto 0) := "00";
+        ALU_SRC : out std_logic := '0';
+        WR_SRC : out std_logic := '0';
+        MEM_WRITE : out std_logic := '0';
+        OFFSET : out std_logic_vector(23 downto 0) := (others => '0');
+        IMM : out std_logic_vector(7 downto 0) := (others => '0')
     );
 end DECODER;
 
 architecture Behavioral of DECODER is
-begin;
+begin
     process (INSTRUCTION)
     begin
-        case( INSTRUCTION(31 downto 20) ) is
-            when "111000101000" => -- ADDi
+        case INSTRUCTION(31 downto 24) is
+            when "00000001" => --MOV
+                N_PC_SEL <= '0';
+                PSR_EN <= '0';
                 RN <= INSTRUCTION(19 downto 16);
                 RD <= INSTRUCTION(15 downto 12);
+                REG_SEL <= '0';
+                REG_WRITE <= '1';
+                ALU_CTR <= "11";
+                ALU_SRC <= '0';
+                WR_SRC <= '0';
+                MEM_WRITE <= '0';
+                OFFSET <= (others => '0');
+                IMM <= (others => '0');
+            when "00000010" => --ADDr
+                N_PC_SEL <= '0';
+                PSR_EN <= '0';
+                RN <= INSTRUCTION(19 downto 16);
+                RM <= INSTRUCTION(15 downto 12);
+                RD <= INSTRUCTION(11 downto 8);
+                REG_SEL <= '0';
+                REG_WRITE <= '1';
+                ALU_CTR <= "00";
+                ALU_SRC <= '0';
+                WR_SRC <= '0';
+                MEM_WRITE <= '0';
+                OFFSET <= (others => '0');
+                IMM <= (others => '0');
+            when "00000011" => --SUBr
+                N_PC_SEL <= '0';
+                PSR_EN <= '0';
+                RN <= INSTRUCTION(19 downto 16);
+                RM <= INSTRUCTION(15 downto 12);
+                RD <= INSTRUCTION(11 downto 8);
+                REG_SEL <= '0';
+                REG_WRITE <= '1';
+                ALU_CTR <= "10";
+                ALU_SRC <= '0';
+                WR_SRC <= '0';
+                MEM_WRITE <= '0';
+                OFFSET <= (others => '0');
+                IMM <= (others => '0');
+            when "00000100" => --ADDi
+                N_PC_SEL <= '0';
+                PSR_EN <= '0';
+                RN <= INSTRUCTION(19 downto 16);
+                RD <= INSTRUCTION(15 downto 12);
+                REG_SEL <= '0';
+                REG_WRITE <= '1';
+                ALU_CTR <= "00";
+                ALU_SRC <= '1';
+                WR_SRC <= '0';
+                MEM_WRITE <= '0';
+                OFFSET <= (others => '0');
                 IMM <= INSTRUCTION(7 downto 0);
-
-            when "111000001000" => --ADDr
+            when "00000101" => --SUBi
+                N_PC_SEL <= '0';
+                PSR_EN <= '0';
                 RN <= INSTRUCTION(19 downto 16);
                 RD <= INSTRUCTION(15 downto 12);
-                RM <= INSTRUCTION(3 downto 0);
-
-            when "111000111010" => --MOV
-                RD <= INSTRUCTION(15 downto 12);
+                REG_SEL <= '0';
+                REG_WRITE <= '1';
+                ALU_CTR <= "10";
+                ALU_SRC <= '1';
+                WR_SRC <= '0';
+                MEM_WRITE <= '0';
+                OFFSET <= (others => '0');
                 IMM <= INSTRUCTION(7 downto 0);
-
-            when "111000110101" => --CMP
-                RN <= INSTRUCTION(19 downto 16);
+            when "00000110" => --STR
+                N_PC_SEL <= '0';
+                PSR_EN <= '0';
+                RM <= INSTRUCTION(19 downto 16);
+                REG_SEL <= '0';
+                REG_WRITE <= '0';
+                ALU_CTR <= "01";
+                ALU_SRC <= '1';
+                WR_SRC <= '0';
+                MEM_WRITE <= '1';
+                OFFSET <= (others => '0');
                 IMM <= INSTRUCTION(7 downto 0);
-
-            when "111001100001" => --LDR
-                RN <= INSTRUCTION(19 downto 16);
-                RD <= INSTRUCTION(15 downto 12);
-                OFFSET <= INSTRUCTION(11 downto 0);
-
-            when "111010100001" => --STR
-                RN <= INSTRUCTION(19 downto 16);
-                RD <= INSTRUCTION(15 downto 12);
-                OFFSET <= INSTRUCTION(11 downto 0);
-
-            when "111001100000" =>
-                RN <= INSTRUCTION(19 downto 16);
-                RD <= INSTRUCTION(15 downto 12);
-                OFFSET <= INSTRUCTION(11 downto 0);
-
-            when "111010100000" =>
-                OFFSET <= INSTRUCTION(23 downto 0);
-
-            when "101110100000" =>
-                OFFSET <= INSTRUCTION(23 downto 0);
-
-        end case ;
+            when "00000111" => --LDR
+                N_PC_SEL <= '0';
+                PSR_EN <= '0';
+                RD <= INSTRUCTION(19 downto 16);
+                REG_SEL <= '0';
+                REG_WRITE <= '1';
+                ALU_CTR <= "01";
+                ALU_SRC <= '1';
+                WR_SRC <= '1';
+                MEM_WRITE <= '0';
+                OFFSET <= (others => '0');
+                IMM <= INSTRUCTION(7 downto 0);
+            when "00001000" => --SET
+                N_PC_SEL <= '0';
+                PSR_EN <= '0';
+                RD <= INSTRUCTION(19 downto 16);
+                REG_SEL <= '0';
+                REG_WRITE <= '1';
+                ALU_CTR <= "01";
+                ALU_SRC <= '1';
+                WR_SRC <= '0';
+                MEM_WRITE <= '0';
+                OFFSET <= (others => '0');
+                IMM <= INSTRUCTION(7 downto 0);
+            when others =>
+                N_PC_SEL <= '0';
+                PSR_EN <= '0';
+                RN <= (others => '0');
+                RM <= (others => '0');
+                RD <= (others => '0');
+                REG_SEL <= '0';
+                REG_WRITE <= '0';
+                ALU_CTR <= "00";
+                ALU_SRC <= '0';
+                WR_SRC <= '0';
+                MEM_WRITE <= '0';
+                OFFSET <= (others => '0');
+                IMM <= (others => '0');
+        end case;
     end process;
 end Behavioral;
