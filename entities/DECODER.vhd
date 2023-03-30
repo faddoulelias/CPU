@@ -12,7 +12,6 @@ entity DECODER is
         RN : out std_logic_vector(3 downto 0) := (others => '0'); --Ra
         RM : out std_logic_vector(3 downto 0) := (others => '0'); --Rb
         RD : out std_logic_vector(3 downto 0) := (others => '0'); --Rw
-        REG_SEL : out std_logic := '0'; --if 1 Rw = Rb
         REG_WRITE : out std_logic := '0';
         ALU_CTR : out std_logic_vector(1 downto 0) := "00";
         ALU_SRC : out std_logic := '0';
@@ -33,7 +32,6 @@ begin
                 PSR_EN <= '0';
                 RN <= INSTRUCTION(19 downto 16);
                 RD <= INSTRUCTION(15 downto 12);
-                REG_SEL <= '0';
                 REG_WRITE <= '1';
                 ALU_CTR <= "11";
                 ALU_SRC <= '0';
@@ -47,7 +45,6 @@ begin
                 RN <= INSTRUCTION(19 downto 16);
                 RM <= INSTRUCTION(15 downto 12);
                 RD <= INSTRUCTION(11 downto 8);
-                REG_SEL <= '0';
                 REG_WRITE <= '1';
                 ALU_CTR <= "00";
                 ALU_SRC <= '0';
@@ -61,7 +58,6 @@ begin
                 RN <= INSTRUCTION(19 downto 16);
                 RM <= INSTRUCTION(15 downto 12);
                 RD <= INSTRUCTION(11 downto 8);
-                REG_SEL <= '0';
                 REG_WRITE <= '1';
                 ALU_CTR <= "10";
                 ALU_SRC <= '0';
@@ -74,7 +70,6 @@ begin
                 PSR_EN <= '0';
                 RN <= INSTRUCTION(19 downto 16);
                 RD <= INSTRUCTION(15 downto 12);
-                REG_SEL <= '0';
                 REG_WRITE <= '1';
                 ALU_CTR <= "00";
                 ALU_SRC <= '1';
@@ -87,7 +82,6 @@ begin
                 PSR_EN <= '0';
                 RN <= INSTRUCTION(19 downto 16);
                 RD <= INSTRUCTION(15 downto 12);
-                REG_SEL <= '0';
                 REG_WRITE <= '1';
                 ALU_CTR <= "10";
                 ALU_SRC <= '1';
@@ -99,7 +93,6 @@ begin
                 N_PC_SEL <= '0';
                 PSR_EN <= '0';
                 RM <= INSTRUCTION(19 downto 16);
-                REG_SEL <= '0';
                 REG_WRITE <= '0';
                 ALU_CTR <= "01";
                 ALU_SRC <= '1';
@@ -111,7 +104,6 @@ begin
                 N_PC_SEL <= '0';
                 PSR_EN <= '0';
                 RD <= INSTRUCTION(19 downto 16);
-                REG_SEL <= '0';
                 REG_WRITE <= '1';
                 ALU_CTR <= "01";
                 ALU_SRC <= '1';
@@ -123,7 +115,6 @@ begin
                 N_PC_SEL <= '0';
                 PSR_EN <= '0';
                 RD <= INSTRUCTION(19 downto 16);
-                REG_SEL <= '0';
                 REG_WRITE <= '1';
                 ALU_CTR <= "01";
                 ALU_SRC <= '1';
@@ -131,13 +122,42 @@ begin
                 MEM_WRITE <= '0';
                 OFFSET <= (others => '0');
                 IMM <= INSTRUCTION(7 downto 0);
+            when "00001001" => --CMP
+                N_PC_SEL <= '0';
+                PSR_EN <= '1';
+                RN <= INSTRUCTION(19 downto 16);
+                RM <= INSTRUCTION(15 downto 12);
+                REG_WRITE <= '0';
+                ALU_CTR <= "10";
+                ALU_SRC <= '0';
+                WR_SRC <= '0';
+                MEM_WRITE <= '0';
+                OFFSET <= (others => '0');
+                IMM <= (others => '0');
+            when "00001010" => --BAL
+                N_PC_SEL <= '1';
+                PSR_EN <= '0';
+                REG_WRITE <= '0';
+                ALU_CTR <= "01";
+                ALU_SRC <= '0';
+                WR_SRC <= '0';
+                MEM_WRITE <= '0';
+                OFFSET <= INSTRUCTION(23 downto 0);
+            when "00001011" => --BLT
+                N_PC_SEL <= PSR(0);
+                PSR_EN <= '0';
+                REG_WRITE <= '0';
+                ALU_CTR <= "01";
+                ALU_SRC <= '0';
+                WR_SRC <= '0';
+                MEM_WRITE <= '0';
+                OFFSET <= INSTRUCTION(23 downto 0);
             when others =>
                 N_PC_SEL <= '0';
                 PSR_EN <= '0';
                 RN <= (others => '0');
                 RM <= (others => '0');
                 RD <= (others => '0');
-                REG_SEL <= '0';
                 REG_WRITE <= '0';
                 ALU_CTR <= "00";
                 ALU_SRC <= '0';

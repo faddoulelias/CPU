@@ -16,7 +16,7 @@ add wave -radix binary -position end sim:/processor/ALU_SRC
 add wave -radix binary -position end sim:/processor/ALU_CTR
 add wave -radix binary -position end sim:/processor/MEM_WR
 add wave -radix binary -position end sim:/processor/WR_SRC
-add wave -radix binary -position end sim:/processor/FLAG
+add wave -radix binary -position end sim:/processor/FLAG(0)
 
 add wave -radix decimal -position end sim:/processor/REG16B32/Bench
 add wave -radix decimal -position end sim:/processor/MEM64B32/Bench

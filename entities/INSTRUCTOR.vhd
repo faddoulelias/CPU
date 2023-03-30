@@ -7,11 +7,13 @@ use ieee.numeric_std.all;
 
 entity INSTRUCTOR is
     port (
-        CLK : in std_logic;
-        RST : in std_logic;
-        nPCsel : in std_logic;
-        OFFSET : in std_logic_vector(23 downto 0);
-        INSTRUCTION : out std_logic_vector(31 downto 0)
+        CLK : in std_logic := '0';
+        RST : in std_logic := '0';
+
+        nPCsel : in std_logic := '0';
+        OFFSET : in std_logic_vector(23 downto 0) := (others => '0');
+        
+        INSTRUCTION : out std_logic_vector(31 downto 0) := (others => '0')
     );
 end INSTRUCTOR;
 

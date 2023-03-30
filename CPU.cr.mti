@@ -1,24 +1,4 @@
-{D:/OneDrive - Murex/Desktop/Project/CPU/entities/MEM64B32.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/OneDrive - Murex/Desktop/Project/CPU/entities/MEM64B32.vhd}
-Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package NUMERIC_STD
--- Compiling entity MEM64B32
--- Compiling architecture behavorial of MEM64B32
-
-} {} {}} {D:/OneDrive - Murex/Desktop/Project/CPU/entities/CPU.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/OneDrive - Murex/Desktop/Project/CPU/entities/CPU.vhd}
-Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package NUMERIC_STD
--- Compiling entity CPU
--- Compiling architecture Behavioral of CPU
--- Loading entity DECODER
--- Loading entity PROCESSOR
-
-} {} {}} {D:/OneDrive - Murex/Desktop/Project/CPU/entities/PROCESSOR.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/OneDrive - Murex/Desktop/Project/CPU/entities/PROCESSOR.vhd}
+{D:/OneDrive - Murex/Desktop/Project/CPU/entities/PROCESSOR.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/OneDrive - Murex/Desktop/Project/CPU/entities/PROCESSOR.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -31,6 +11,27 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  
 -- Loading entity MUX2TN
 -- Loading entity ALU
 -- Loading entity MEM64B32
+-- Loading entity PSR
+
+} {} {}} {D:/OneDrive - Murex/Desktop/Project/CPU/entities/CPU.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/OneDrive - Murex/Desktop/Project/CPU/entities/CPU.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity CPU
+-- Compiling architecture Behavioral of CPU
+-- Loading entity DECODER
+-- Loading entity PROCESSOR
+
+} {} {}} {D:/OneDrive - Murex/Desktop/Project/CPU/entities/MEM64B32.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/OneDrive - Murex/Desktop/Project/CPU/entities/MEM64B32.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity MEM64B32
+-- Compiling architecture behavorial of MEM64B32
 
 } {} {}} {D:/OneDrive - Murex/Desktop/Project/CPU/entities/PCT24B32.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/OneDrive - Murex/Desktop/Project/CPU/entities/PCT24B32.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
@@ -50,15 +51,6 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  
 -- Compiling entity REG16B32
 -- Compiling architecture Behavioral of REG16B32
 
-} {} {}} {D:/OneDrive - Murex/Desktop/Project/CPU/entities/INM64B32.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/OneDrive - Murex/Desktop/Project/CPU/entities/INM64B32.vhd}
-Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package NUMERIC_STD
--- Compiling entity INM64B32
--- Compiling architecture behavorial of INM64B32
-
 } {} {}} {D:/OneDrive - Murex/Desktop/Project/CPU/entities/INSTRUCTOR.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/OneDrive - Murex/Desktop/Project/CPU/entities/INSTRUCTOR.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
 -- Loading package STANDARD
@@ -69,6 +61,15 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  
 -- Compiling architecture Behavioral of INSTRUCTOR
 -- Loading entity PCT24B32
 -- Loading entity INM64B32
+
+} {} {}} {D:/OneDrive - Murex/Desktop/Project/CPU/entities/PSR.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/OneDrive - Murex/Desktop/Project/CPU/entities/PSR.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity PSR
+-- Compiling architecture Behavioral of PSR
 
 } {} {}} {D:/OneDrive - Murex/Desktop/Project/CPU/entities/DECODER.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/OneDrive - Murex/Desktop/Project/CPU/entities/DECODER.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
@@ -114,5 +115,16 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  
 -- Loading package NUMERIC_STD
 -- Compiling entity MUX2TN
 -- Compiling architecture Behavioral of MUX2TN
+
+} {} {}} {D:/OneDrive - Murex/Desktop/Project/CPU/entities/SYS.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/OneDrive - Murex/Desktop/Project/CPU/entities/SYS.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity SYS
+-- Compiling architecture Behavioral of SYS
+-- Loading entity CPU
+-- Loading entity INSTRUCTOR
 
 } {} {}}
