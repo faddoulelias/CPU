@@ -15,7 +15,9 @@ entity PROCESSOR is
         ALU_CTR : in std_logic_vector(1 downto 0);
         MEM_WR : in std_logic;
         WR_SRC : in std_logic;
-        FLAG : out std_logic
+
+        PSR_EN : in std_logic;
+        PSR : out std_logic_vector(31 downto 0)
     );
 end PROCESSOR;
 
@@ -27,6 +29,7 @@ architecture Behavioral of PROCESSOR is
     signal aluIN2 : std_logic_vector(31 downto 0);
     signal aluOUT : std_logic_vector(31 downto 0);
     signal DataOUT : std_logic_vector(31 downto 0);
+    signal FLAG : std_logic_vector(31 downto 0) := (others => '0');
 begin
     REG16B32 : entity work.REG16B32 port map (
         CLK => CLK,
@@ -61,7 +64,7 @@ begin
         BUS_A => busA,
         BUS_B => aluIN2,
         ALU_OUT => aluOUT,
-        N => FLAG
+        N => FLAG(0)
     );
 
     MEM64B32 : entity work.MEM64B32 port map (
@@ -82,4 +85,12 @@ begin
         S => busW
     );
 
+    PSTATE : entity work.PSR port map (
+        CLK => CLK,
+        RST => RESET,
+        DATAIN => FLAG,
+        WE => PSR_EN,
+        DATAOUT => PSR
+    );
+    
 end Behavioral;
